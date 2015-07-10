@@ -1,0 +1,21 @@
+.primary {
+  position: absolute;
+}
+
+#portfolio .portfolio-item .secondary {
+  transform: rotateY(-180deg);
+  transition: 0.8s;
+}
+
+#portfolio .portfolio-item .primary {
+	transition: 0.8s;
+  transform: rotateY(0deg);
+}
+
+#portfolio .portfolio-item:hover .primary {
+  transform: rotateY(180deg);
+}
+
+#portfolio .portfolio-item:hover .secondary {
+  transform: rotateY(0deg);
+}
